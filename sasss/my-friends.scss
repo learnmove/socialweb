@@ -1,0 +1,48 @@
+.self-container{
+	max-width:550px;
+	background-color: #FDFEF0;
+		color:white;
+	margin:25px auto;
+}
+.top{
+	 border-top-left-radius: 2em;
+	 border-top-right-radius: 2em;
+	 border:#F5F5F5 1px solid;
+
+	text-align: center;
+	background-color: #03a9f4;
+	font-size: 33px;
+}
+.list{
+	color:black;
+	font-size: 14px;
+	color:#607d8b;
+
+}
+tbody{
+	font-weight: bold;
+
+}
+
+
+.friend-block{
+	width:30%;
+		.avatar{
+	display: inline-block;
+
+			width:40px;
+			height: 40px;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+
+}
+.status{
+	width:70%;
+	.status-content{
+		height: 40px;
+		padding-top: 10px;
+	}
+}

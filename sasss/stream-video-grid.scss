@@ -1,0 +1,46 @@
+.self-container{
+	max-width: 1304px;
+	padding: 30px;
+}
+.video-item{
+	width:calc(100%/5);
+	float:left;
+	@media screen and (max-width:1608px ) {
+	width:calc(100%/4);
+		
+	}
+	@media screen and (max-width:960px ) {
+	width:calc(100%/3);
+		
+	}
+	@media screen and (max-width:700px ) {
+	width:calc(100%/2);
+		
+	}
+	@media screen and (max-width:533px ) {
+	width:calc(100%/1);
+		
+	}
+}
+body{
+
+}
+.post-button{
+	position: fixed;
+	bottom: 0px;
+	left:30%;
+	background-color: #a94442;
+	border:0px;
+
+}
+.modal-content{
+	padding: 20px;
+	top: 100px;
+	background-color: white;
+	color:black;
+	input{
+		border:1px solid #556677;
+		background-color: #F5F5F5;
+	}
+
+}

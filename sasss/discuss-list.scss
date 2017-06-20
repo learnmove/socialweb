@@ -1,0 +1,115 @@
+@mixin text-size(){
+	@media screen and (max-width: 1000px) {
+		font-size: 20px;
+		
+	}
+}
+html{
+	margin-bottom: 43px;
+}
+body{
+	background-color: black;
+}
+.discuss-block{
+	color:#F0F0F0;
+	margin:0 auto;
+	.discuss-items{
+		.discuss-item{
+			margin:20px 0;
+			border-bottom: 1px solid #696969;
+				font-size:20px;
+				@include text-size;
+			&:after{
+			content:'';
+			display:table;
+			clear:both;
+			}
+			height: auto;
+			.discuss-category{
+				text-align: center;
+				width: 15%;
+				float:left;
+
+				
+				.category{
+
+				}
+				.reply-count{
+					color:#F5F500;
+					letter-spacing: 3px;
+				}
+				}	
+			.discuss-title-block{
+				width:75%;
+				float:left;
+				.discuss-title{
+				}
+					@media screen and (max-width: 1000px) {
+		font-size: 20px;
+		bottom: -38px;
+		
+				}
+			.author-info{
+				.author-address{
+					margin-right: 2px;
+				}
+				}
+			}	
+			.discuss-date{
+				width: 5%;
+				position: relative;
+				bottom: 0px;
+				text-align: left;
+				clear:right;
+				float:left;
+				padding-left: 10px;
+					@media screen and (max-width: 1000px) {
+		font-size: 10px;
+		bottom: -38px;
+		
+	}
+
+
+
+			}
+
+		}
+	
+	}
+	.post-button{
+		position: fixed;
+		bottom: 0px;
+		left:30%;
+		background-color: #a94442;
+		border:0px;
+
+	}
+	.modal-content{
+		background-color: black;
+		color:white;
+		input[type="text"]{
+			color:black;
+		}
+		select{
+			color:black;
+		}
+		#img-upload{
+				width: 50px;
+	    }
+	    input[type="file"]{
+	    	background-color: black;
+	    }
+	}
+
+
+
+}
+
+
+
+// function
+.text-overflow{
+	white-space: nowrap;
+	    text-overflow: ellipsis;
+	overflow: hidden;
+}

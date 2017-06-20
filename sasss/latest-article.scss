@@ -1,0 +1,106 @@
+body{
+	// background-image: url(https://media.giphy.com/media/ZMtzVMrcmqBna/giphy.gif);
+	background-color:black;
+	color:#000000;
+
+}
+
+.container{
+	margin-top: 50px;
+}
+.hotest-article-block{
+	display: flex;
+
+	margin-bottom: 20px;
+	justify-content:center;
+
+.hot-box{
+	position: relative;
+	width:calc(100%/3 );
+	    // box-shadow: 1px 6px 27px #888888;
+	    color:z;
+		margin-right: 15px;
+
+	.hot-user-info{
+		color:#fff;
+
+		width: 100%;
+		height: 100%;
+		.hot-avatar{
+			@media screen and (min-width: 600px){
+			padding: 0 30px;
+				
+			}
+			width: 100%;
+			img{
+					width: 100%;
+					height: auto;
+			}
+		}
+		.hot-user-account{
+		    font-size: 1vw;
+			text-align: center;
+		}
+		.hot-user-article-title{
+			text-align: center;
+
+			font-size: 1vw;
+			@media screen and (min-width: 600px){
+			font-size: 1.5vw;
+			
+				
+			}
+			bottom: 0px;
+		}
+		.hot-user-article-degree-block{
+			margin-top: 2px;
+			text-align: center;
+
+			font-size: 1vw;
+			@media screen and (min-width: 600px){
+			font-size: 1.5vw;
+			
+				
+			}
+			.degree{
+				color:red;
+
+			}
+		}
+		.hot-sign{
+			position: absolute;
+			@media screen and (min-width: 600px){
+			font-size: 50px;
+			
+				
+			}
+			color:red;
+			top:0;
+			text-align: center;
+		}
+		.hot-user-name{
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+	}
+
+
+
+}
+}
+
+.latest-article-block{
+
+	display: flex;
+	flex-wrap:wrap;
+	.hot-box{
+		width: calc(100%/5);
+		.hot-user-article-title{
+		padding: 0px;
+	font-size: 1px;
+
+		}
+	}
+
+}

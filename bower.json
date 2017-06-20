@@ -1,0 +1,15 @@
+{
+  "name": "blue-leaf",
+  "description": "Physics-like animations for pretty particles",
+  "main": [],
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {},
+  "moduleType": [],
+  "keywords": [],
+  "authors": [],
+  "license": "MIT",
+  "ignore": [],
+  "private": true
+}
