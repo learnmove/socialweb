@@ -419,22 +419,22 @@
       <form>  
 
     <div class="form-group">
-    <label for="post-title">標題
+    <label for="post-title" >標題
       </label>
-      <input type="text" name="" id="" class="post-title">
+      <input type="text" name="title" id="" class="post-title">
       </div>
      <div class="form-group">
   <label for="comment">發表內容:</label>
-  <textarea class="form-control" rows="5" id="comment">
+  <textarea class="form-control" rows="5" name="content" maxlength="1000" id="comment">
     
   </textarea>分類：
   <select>
-  <option selected="selected" value="chat">閒聊</option>
+  <option selected="selected"  name="category" value="chat">閒聊</option>
 </select>
 </div>
 <img src="  " id="img-upload">
 
-<input type="file" id="imginput" name="image" accept="image/jpeg,image/gif" id="">
+<input type="file" id="imginput"  name="image" name="image" accept="image/jpeg,image/gif" id="">
 <button class="btn btn-primary">  送出</button>
       </form>
     </div>

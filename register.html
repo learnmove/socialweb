@@ -2,17 +2,17 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=400px;initial-scale=0.5">
-    
+
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./dist/main.css">
-    <link rel="stylesheet" href="./dist/stream-video-grid.css">
+    <link rel="stylesheet" href="./dist/register.css">
+
     <style>
     
     </style>
   </head>
   <body>
-    
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -27,13 +27,13 @@
           <ul class="nav navbar-nav bottom-design-border">
             <li class=" bottom-border"><a href="./index-content.html"><i class="fa fa-users" aria-hidden="true"></i>
             畫作拍賣區</a></li>
-            <li class="active bottom-border"><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>
+            <li class="active bottom-border"><a href="./discuss-list.html"><i class="fa fa-comments" aria-hidden="true"></i>
             討論區</a></li>
             <li class="bottom-border"><a href="#"><i class="fa fa-paint-brush" aria-hidden="true"></i>
             創作故事區</a></li>
             <li class="bottom-border"><a href="./stream-video-grid.html"><i class="fa fa-paint-brush" aria-hidden="true"></i>
             創作直播區</a></li>
-            <li class="bottom-border"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <li class="bottom-border"><a href="./myblog.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
             陌生人日記</a></li>
             <li class="bottom-border"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-smile-o" aria-hidden="true"></i>
               公益區
@@ -122,72 +122,89 @@
             <div class="col-md-2 ">2</div>
           </div>
         </div>
-<!-- stream grid -->
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-<!--  -->
-        <div class="self-container">
-     
-        <div class="videos">
-          
-          <div class="video-item">
-           <div class="video-post-user">
-           </div>
-            <div class="video-title"></div>
-            <div class="video-description"></div>
-            <div class="video-block">
-              <div class="fb-video" 
-                data-autoplay="false"
-                data-href="https://www.facebook.com/1602536660/videos/10208946246485714/" 
-                data-show-text="true">
-    
-
+        <!-- content -->
+         <div class="self-container"> 
+            <div class="top"> 
+             註冊帳號
+            <span class="sign-top">☺ </span>
             </div>
-          </div>
+          <form>
+            
+
+            <div class="form-group" >
+            <label>帳號</label>
+            <input type="text" placeholder="craigchang30248" class="form-control" maxlength="20" name="account">
+            </div>
+        <div class="form-group" >
+            <label>密碼</label>
+            <input type="password" placeholder="5位中英數字以上" class="form-control" maxlength="20" name="password">
+            </div>
+
+            <div class="avatar">
+              <img src="  " id="img-upload">
+<div class="image-avatar">大頭貼</div>
+<input type="file" id="imginput"  name="image" name="image" accept="image/jpeg,image/gif" id="">
+            </div>
+         <div class="form-group" >
+            <label for="usr">信箱</label>
+            <input type="password" class="form-control" placeholder="craigchang30248@gmail.com" maxlength="20" name="username">
+            </div>
+            <div class="form-group" >
+            <label for="usr">學校/公司</label>
+            <input type="password"  placeholder="國立高雄應用科技大學" class="form-control" maxlength="20" name="company">
+            </div>
+          <div class="form-group" >
+            <label for="usr">年紀</label>
+            <input type="number" class="form-control" placeholder="25" maxlength="20" name="age">
+            </div>
+           <div class="form-group" >
+            <label for="usr">大名</label>
+            <input type="text" class="form-control" placeholder="張小豪" maxlength="20" name="username">
+            </div>
+                      <div class="form-group" >
+            <label for="usr">設計師名稱</label>
+            <input type="text" placeholder="Johhny" class="form-control" maxlength="20" name="designer">
+            </div>
+             <div class="form-group" >
+            <label for="usr">星座</label>
+            <input type="text" placeholder="Johhny" class="form-control" maxlength="20" name="zodiac ">
+            </div>
+            <div class="radio">
+              <label for="usr"><input type="radio" name="optradio">偶素男森<span class="boy">♂</span></label>
+            </div>
+           <div class="radio">
+              <label for="usr"><input type="radio" name="optradio">偶素女森<span class="girl">♀</span> </label>
+            </div>
+            <button class="btn btn-primary" type="submit">來企註冊嘍!</button>
+          </form>
+
+
         </div>
+        <!-- jq -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- avatar -->
+<script>
+function readUrl(input){
+  if(input.files&&input.files[0]){
+    var reader=new FileReader();
+    reader.onload=function(e){
+      $('#img-upload').attr('src',e.target.result);
+    }
+            reader.readAsDataURL(input.files[0]); //讀取到的檔變dataUrl
+
+  }
+
+}
+$("#imginput").change(function(){
+readUrl(this);
+});
+</script>
 
 
 
-        <!-- post video -->
-                 
-       
-        </div>
-            <button type="button" class="btn btn-primary btn-lg post-button" data-toggle="modal" data-target=".bs-example-modal-lg">發表直播</button>
-            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <form>
-                   
-                      <div class="form-group">
-                        <label for="comment">fb直播網址</label>
-                        <input type="text"  name="description">
-                      </div>
-                     
-                      
-
-                      <button class="btn btn-primary">  送出</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-</div>
-
-
-
-
-                  <script
-          src="https://code.jquery.com/jquery-3.2.1.js"
-          integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-          crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-          <!--  index content -->
-          
-        </body>
-      </html>
+      </body>
+    </html>

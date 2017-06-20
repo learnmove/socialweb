@@ -4,8 +4,11 @@
 @import "./font-awesome/scss/font-awesome";
 body{
   background: #F5F5F5;
-  font-family: Comic Sans MS,arial,helvetica,sans-serif;
-
+  font-family: simhei,Comic Sans MS,arial,helvetica,sans-serif;
+::selection {
+  background: #ffeb3b;
+  color: black;
+}
 }
 .navbar{
 border-radius: 0px;
@@ -146,6 +149,7 @@ font-size:150%;
 }
 
 .logo{
+  font-family: Comic Sans MS;
   img{
     width:100%;
   }

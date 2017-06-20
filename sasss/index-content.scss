@@ -126,11 +126,16 @@ body{
 	
 		.user-info{
 			width:100%;
+			display: flex;
+			align-items:center;
+			justify-content:center;
+
 			&:after{
 			content:'';
 			display:table;
 			clear:both;
 			}	
+
 			.user-avatar{
 
 				padding: 0;
@@ -150,7 +155,7 @@ body{
 			    float:left;
 		        text-transform: capitalize;
 				line-height: 40px;
-				margin-right:5px;
+				margin-left:0px;
 				@include user-info-float;
 				width: 92px;
 			}
@@ -175,34 +180,31 @@ body{
 // @include user-info-flex;
 
 				margin-right:5px;
-				margin-left:22px;
 
 				@media screen and (min-width:600px){
 					    margin-right: 5px;
 				}
 			}
 			.user-company{
-				float:left;
 				margin-right:5px;
 				line-height: 40px;
 				margin-right:5px;
+			    clear:left;
+
 // @include user-info-flex;
 				@media screen and (max-width:600px){
 					    margin-left: 30px;
 				}
 
 			}
-			.user-zodiac{
-			    float:left;
-				line-height: 40px;
-				margin-right: 4px;
-				@include user-info-float;
-			}
-
+		
 
 		}
 		.user-info-2{
-			
+			display: flex;
+			align-items:center;
+			text-align: center;
+			justify-content:center;
 			.user-address{
 
 				float:left;
@@ -222,12 +224,18 @@ body{
 // @include user-info-flex;
 
 				margin-right:5px;
-				margin-left:22px;
 
 				@media screen and (min-width:600px){
 					    margin-right: 5px;
 				}
 			}
+				.user-zodiac{
+			    float:left;
+				line-height: 40px;
+				margin-right: 4px;
+				@include user-info-float;
+			}
+
 		}
 		&:hover{
 				.user-function{

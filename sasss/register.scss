@@ -1,0 +1,70 @@
+.self-container{
+	max-width:550px;
+	background-color: #FDFEF0;
+		color:black;
+	margin:25px auto;
+}
+.top{
+	 border-top-left-radius: 2em;
+	 border-top-right-radius: 2em;
+	 border:#F5F5F5 1px solid;
+color:white;
+	text-align: center;
+	background-color: #03a9f4;
+	font-size: 33px;
+}
+
+
+.friend-block{
+	width:30%;
+		.avatar{
+	display: inline-block;
+
+			width:40px;
+			height: 40px;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+
+}
+.status{
+	width:70%;
+	.status-content{
+		height: 40px;
+		padding-top: 10px;
+	}
+}
+		#img-upload{
+				width: 50px;
+	    }
+	    .avatar{
+	text-align: left;
+
+	    	color:black;
+	    	span{
+	    		background-color: #17A4E0;
+	    		color:white;
+	    	}
+	    }
+label{
+	font-size: 25px;
+}
+.image-avatar{
+	text-align: left;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 5px;
+
+
+}
+.girl{
+	color:#EFB4A2;
+}
+.boy{
+	color:#03A9F4;
+}
+form{
+	padding:15px;
+}
