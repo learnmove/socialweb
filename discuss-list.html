@@ -127,18 +127,16 @@ ad
         <div class="container">
               <ul class="nav nav-pills">
   <li class="active"><a href="#">全部</a></li>
+  <li><a href="#">閒聊</a></li>
   <li><a href="#">職場</a></li>
   <li><a href="#">外包</a></li>
   <li><a href="#">徵才</a></li>
-  <li><a href="#">公司</a></li>
-
-  <li><a href="#">閒聊</a></li>
-
-  <li><a href="#">技術</a></li>
-
-  <li><a href="#">家教</a></li>
   <li><a href="#">教學</a></li>
+  <li><a href="#">技術</a></li>
+  <li><a href="#">開班</a></li>
+  <li><a href="#">家教</a></li>
   <li><a href="#">交易</a></li>
+  <li><a href="#">合作</a></li>
 
 
 
@@ -423,13 +421,25 @@ ad
     <div class="form-group">
     <label for="post-title" >標題
       </label>
-      <input type="text" name="title" id="" class="post-title">
+      <input type="text" maxlength="50"name="title" id="" class="post-title">
       </div>
      <div class="form-group">
-  <label for="comment">發表內容:</label>
-  <textarea class="form-control" rows="5" name="content" maxlength="1000" id="comment"></textarea>分類：
-  <select>
-  <option selected="selected"  name="category" value="chat">閒聊</option>
+  <label for="comment" >發表內容:</label>
+  <textarea class="form-control" rows="5" name="content" maxlength="3000" id="comment"></textarea>分類：
+  <select name="category">
+  <option selected="selected"   value="chat">閒聊</option>
+閒聊
+職場
+外包
+徵才
+教學
+技術
+開班
+家教
+交易
+合作
+
+
 </select>
 </div>
 <img src="  " id="img-upload">

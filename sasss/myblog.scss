@@ -235,6 +235,11 @@ display: flex;
 		}
 
 	.user-info-block{
+		ul{
+			li{
+				margin-bottom: 5px;
+			}
+		}
 		padding-bottom: 10px;
 		margin-bottom: 10px;
 		.avatar{
@@ -257,7 +262,12 @@ display: flex;
 
 	.recent-article-block{
 			margin-bottom:15px;
-
+	ul{
+		li{
+			margin-bottom: 5px;
+		}
+	}
+		
 		.recent-article-title{
 				margin:15px 0px;
 		}
@@ -267,6 +277,8 @@ display: flex;
 		
 
 		.comment-item{
+		margin-bottom: 5px;
+
 			@media screen and (min-width: 600px){
 		padding-left: 40px;
 	
