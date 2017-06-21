@@ -1,3 +1,4 @@
+@import "./mobile-pc/rwd.scss";
 
 
 html{
@@ -61,8 +62,13 @@ padding: 5px;
 
 
 		.comment-time{
+
 			float:right;
 			font-size: 1vw;
+			@include mobile-xs(){
+				font-size: 3vw;
+			}
+
 		}
 	}
 

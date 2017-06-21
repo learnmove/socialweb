@@ -2,6 +2,11 @@
 @import "./sasss/assets/stylesheets/_bootstrap.scss";
 @import "./sasss/assets/stylesheets/_bootstrap-compass.scss";
 @import "./font-awesome/scss/font-awesome";
+@mixin mobile-xs(){
+  @media screen and (max-width:500px){
+          font-size:3vw;
+          }
+}
 body{
   background: #F5F5F5;
   font-family: simhei,Comic Sans MS,arial,helvetica,sans-serif;
@@ -47,6 +52,12 @@ font-size:150%;
       font-size:1vw;
       margin-top: 10px;
       margin-bottom: 10px;
+      @media screen and (max-width:500px){
+          font-size:3vw;
+      
+          
+            
+          }
         ul{
             display:flex;
             padding-left: 0;
@@ -56,7 +67,7 @@ font-size:150%;
             }
         }
         .hotkey-title{
-          color:#13678b;
+          color:#E8E5EF;
         }
         .now-hot{
           color:$main-text-color;
@@ -123,12 +134,20 @@ font-size:150%;
 
 }
 .strenth-button{
+      height:34px;
+
     width:100px;
     transition:all 2s ;
     font-size:1vw;
+    @media screen and (max-width:500px){
+          font-size:3vw;
+      
+          
+            
+          }
     &:hover{
              
-                width:250px;
+                width:340px;
             }
 }
 
@@ -148,9 +167,36 @@ font-size:150%;
     }
 }
 
-.logo{
-  font-family: Comic Sans MS;
-  img{
-    width:100%;
-  }
+
+
+.navbar-brand{
+  padding: 0;
+
+
 }
+ .brand{
+
+  padding: 0;
+
+ }
+
+ .logo-area{
+span{
+  font-family:Comic Sans MS,arial,helvetica,sans-serif;
+
+}  
+  line-height: 50px;
+.logobird{
+      margin-bottom: 7px;
+  width: 50px;
+  display: inline;
+  line-height: 50px;
+
+  margin-left: 40px;
+
+
+
+}
+   .logobird-span{
+ }
+ }

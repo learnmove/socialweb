@@ -25,6 +25,7 @@ body{
 	height: 100%;
 }
 .article-work-item{
+	opacity: 0.8;
 	box-sizing:border-box;
 	margin: 0 2px 15px;
 	padding: 8px;
@@ -32,8 +33,18 @@ body{
 	transition: opacity .4s ease-in-out;
   display: inline-block;
   column-break-inside: avoid;
+	&:hover{
+	opacity: 1;
+	}
+
+	&:not(:hover){
+	opacity: 0.9;
+	}
+  	
+	
 
  .photo-block{
+
  	position: relative;
  	.photo{
 	border-radius:15px;
@@ -41,7 +52,8 @@ body{
 	height: auto;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 5px;
-		}
+
+	}
 	.about-count{
 		background-color: rgba(90, 89, 89, 0.48);
 		border-radius: 20%;
@@ -54,6 +66,12 @@ body{
 			padding: 5px;
 		margin:0 5px;
 		font-size:1.3vw;
+		@media screen and (max-width:500px){
+					font-size:3vw;
+			
+					
+						
+					}
 		span{
 			color:#fff;
 		}
@@ -110,6 +128,12 @@ body{
 	}
 	.photo-description{
 		font-size:1vw;
+		@media screen and (max-width:500px){
+					font-size:3vw;
+			
+					
+						
+					}
 	}
 	.photo-title{
 		h3{
@@ -259,6 +283,12 @@ body{
 			border-radius: 20px;
 			color:black;
 			font-size:1vw;
+			@media screen and (max-width:500px){
+					font-size:3vw;
+			
+					
+						
+					}
 			a{
 			text-decoration: none;
 			margin-right: 1px;
@@ -278,6 +308,12 @@ body{
 				a{
 						text-decoration: none;
 						font-size: 1vw;
+						@media screen and (max-width:500px){
+					font-size:3vw;
+			
+					
+						
+					}
 				}
 			}
 		}
@@ -299,7 +335,7 @@ body{
 		.comment-block{
 			position: relative;
 			display: block;
-			z-index: 999;
+			z-index: 2;
 			background-color: #F5F5F5;
 			border-radius: 10px;
 			top:0;
@@ -361,7 +397,6 @@ body{
 	position: absolute;
 	width: 200px;
 	height:120px;
-	background-color:#d0d0d0;
 	top:-119px;
 	left:0;
 	z-index:3;
@@ -375,7 +410,7 @@ body{
 			z-index:-99;
 		    left: 53px;
 		    border-style:solid;
-		    border-color:#d0d0d0 transparent  transparent  transparent ;
+		    border-color:#9B59B6 transparent  transparent  transparent ;
 
 		}
 		&:after{
@@ -407,6 +442,7 @@ body{
 // modal
 
 .post-button{
+	z-index: 3;
 	position: fixed;
 	bottom:0px;
 		left:30%;
@@ -422,12 +458,10 @@ label{
 	background-color: #ddd;
 	font-size: 15px;
 	input[type="text"]{
-		border:1px solid #556677;
 
 		border-radius: 10px;
 	}
 	input[type="number"]{
-		border:1px solid #556677;
 		border-radius: 10px;
 		
 	}
@@ -440,6 +474,9 @@ label{
 	}
 	textarea{
 		border-radius: 10px;
-		border:1px solid #556677;
 	}
 }
+// animate
+
+
+	

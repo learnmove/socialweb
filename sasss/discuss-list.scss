@@ -89,15 +89,27 @@ body{
 		color:white;
 		input[type="text"]{
 			color:black;
+		border-radius: 10px;
+
 		}
 		select{
 			color:black;
+		border-radius: 10px;
+
+			
 		}
 		#img-upload{
 				width: 50px;
 	    }
 	    input[type="file"]{
+	    	margin-bottom: 15px;
 	    	background-color: black;
+	    }
+	    textarea{
+	    	margin-bottom: 15px;
+
+		border-radius: 10px;
+
 	    }
 	}
 

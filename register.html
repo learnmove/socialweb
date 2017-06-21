@@ -21,7 +21,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand brand" href="/">IdeaSing</a>
+            <a class="navbar-brand brand logo-area" href="/">
+  <img class="logobird" src="  ./photo/logo.png">
+          <span class="logobird-span">  IdeaSing</span>
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav bottom-design-border">
@@ -66,7 +69,7 @@
         <div class="searchbar-block">
           <div class="container">
             <div class="col-md-2 ">
-              <img  class="img-responsive" src="./photo/logo.png">
+              ad
               
               
             </div>
@@ -147,33 +150,74 @@
             </div>
          <div class="form-group" >
             <label for="usr">信箱</label>
-            <input type="password" class="form-control" placeholder="craigchang30248@gmail.com" maxlength="20" name="username">
+            <input type="email" class="form-control" placeholder="craigchang30248@gmail.com" maxlength="50" name="username">
             </div>
             <div class="form-group" >
             <label for="usr">學校/公司</label>
-            <input type="password"  placeholder="國立高雄應用科技大學" class="form-control" maxlength="20" name="company">
+            <input type="text" maxlength="30"  placeholder="國立高雄應用科技大學|雄獅旅遊Lion Travel" class="form-control" maxlength="20" name="company">
             </div>
           <div class="form-group" >
             <label for="usr">年紀</label>
-            <input type="number" class="form-control" placeholder="25" maxlength="20" name="age">
+            <input type="number" min="1" class="form-control" placeholder="25" 
+             name="age">
             </div>
            <div class="form-group" >
             <label for="usr">大名</label>
-            <input type="text" class="form-control" placeholder="張小豪" maxlength="20" name="username">
+            <input type="text" class="form-control"   placeholder="張小豪/3個字" maxlength="3" name="username">
             </div>
                       <div class="form-group" >
             <label for="usr">設計師名稱</label>
-            <input type="text" placeholder="Johhny" class="form-control" maxlength="20" name="designer">
+            <input type="text" placeholder="英文：Johhny/9個字 中文：麵包超人/7個字" class="form-control" maxlength="9" name="designer">
             </div>
              <div class="form-group" >
             <label for="usr">星座</label>
-            <input type="text" placeholder="Johhny" class="form-control" maxlength="20" name="zodiac ">
+          <select name="zodiac" class="selectpicker">
+<option value="牡羊座">牡羊座</option>
+<option value="摩羯座">摩羯座</option>
+<option value="雙子座　">雙子座</option>
+<option value="巨蟹座">巨蟹座</option>
+<option value="獅子座">獅子座</option>
+<option value="處女座">處女座</option>
+<option value="天秤座">天秤座</option>
+<option value="天蠍座">天蠍座</option>
+<option value="射手座">射手座</option>
+<option value="金牛座">金牛座</option>
+<option value="雙魚座">雙魚座</option>
+<option value="水瓶座">水瓶座</option>
+
+          </select>
             </div>
+            <label> 居住地</label>
+              <select class="selectpicker" name="location">
+<option value="臺北市">臺北市</option>
+<option value="新北市">新北市</option>
+<option value="基隆市">基隆市</option>
+<option value="桃園市">桃園市</option>
+<option value="新竹縣">新竹縣</option>
+<option value="新竹市">新竹市</option>
+<option value="苗栗縣">苗栗縣</option>
+<option value="臺中市">臺中市</option>
+<option value="彰化縣">彰化縣</option>
+<option value="南投縣">南投縣</option>
+<option value="雲林縣">雲林縣</option>
+<option value="嘉義縣">嘉義縣</option>
+<option value="嘉義市">嘉義市</option>
+<option value="臺南市">臺南市</option>
+<option value=">高雄市">高雄市</option>
+<option value="屏東縣">屏東縣</option>
+<option value="澎湖縣">澎湖縣</option>
+<option value="宜蘭縣">宜蘭縣</option>
+<option value="花蓮縣">花蓮縣</option>
+<option value="臺東縣">臺東縣</option>
+<option value="金馬地區">金馬地區</option>
+</select>
             <div class="radio">
-              <label for="usr"><input type="radio" name="optradio">偶素男森<span class="boy">♂</span></label>
+              <label for="usr"><input type="radio" name="optradio">窩素男森<span class="boy">♂</span></label>
             </div>
+
+
            <div class="radio">
-              <label for="usr"><input type="radio" name="optradio">偶素女森<span class="girl">♀</span> </label>
+              <label for="usr"><input type="radio" name="optradio">窩素女森<span class="girl">♀</span> </label>
             </div>
             <button class="btn btn-primary" type="submit">來企註冊嘍!</button>
           </form>
